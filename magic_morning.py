@@ -151,6 +151,11 @@ def main():
     if user is not None:
         print("Welcome back, " + user[0] + "!")
         print(fetch_weather())
+        daily_agenda = user[4]
+        if daily_agenda:
+            print("Your agenda for today:")
+            for item in daily_agenda.split(','):
+                print(" - " + item.strip())
         print("Remember ", fetch_leo_quote())
 
 
