@@ -1,0 +1,33 @@
+.features h2,
+.problem-solution h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.features li,
+.problem-solution p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.features {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.problem-solution {
+    margin-top: 40px;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}

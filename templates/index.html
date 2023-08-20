@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,35 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <header class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Magic Morning</a>
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Magic Morning">
+            Magic Morning - Your Day, Your Way
+        </a>
     </header>
     <main class="container mt-5">
         <h1>Welcome to Magic Morning</h1>
         <p>Your perfect start to the day. Powered by Horizons.</p>
-        <!-- More Content Here -->
+        <section class="features">
+            <h2>Highlights of the app include:</h2>
+            <ul>
+                <li>Customized news report based on your positivity preferences.</li>
+                <li>Your choice of receiving a horoscope, affirmation, and/or spiritual reading.</li>
+                <li>A motivating quip from your favorite personal development influencer.</li>
+                <li>Up-to-the-minute weather report based on your location.</li>
+            </ul>
+        </section>
+        <section class="problem-solution">
+            <h2>What problem is your project solving?</h2>
+            <p>The "Magic Morning" app is aimed at solving the problem of a disorganized and disoriented start to the day.</p>
+        </section>
+        <!-- Other Sections Here -->
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
