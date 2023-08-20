@@ -13,7 +13,7 @@ conn.commit()
 
 @app.route('/')
 def index():
-    return redirect(url_for('signin'))
+    return redirect(url_for('sign_in'))
 
 
 @app.route('/signin', methods=['GET', 'POST'])
